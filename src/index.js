@@ -105,7 +105,7 @@ class Routes {
       const { byName, urls: { as, href } } = this.findAndGetUrls(route, params)
       return Router[method](href, as, byName ? options : params)
     }
-
+    // next.js link methods
     Router.pushRoute = wrap('push')
     Router.replaceRoute = wrap('replace')
     Router.prefetchRoute = wrap('prefetch')
