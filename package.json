@@ -1,8 +1,8 @@
 {
-  "name": "next-routes",
-  "version": "1.4.2",
+  "name": "next-routes-extended",
+  "version": "1.4.3",
   "description": "Easy to use universal dynamic routes for Next.js",
-  "repository": "fridays/next-routes",
+  "repository": "meabed/next-routes-extended",
   "main": "dist",
   "typings": "typings/next-routes.d.ts",
   "files": [
@@ -31,34 +31,43 @@
     ]
   },
   "dependencies": {
-    "path-to-regexp": "^2.1.0"
+    "path-to-regexp": "^6.2.0",
+    "url-parse": "^1.5.1"
   },
   "peerDependencies": {
-    "next": ">=2",
-    "react": "^15.4.2 || ^16"
+    "next": ">=10",
+    "react": "=>15.4.2"
   },
   "devDependencies": {
-    "@babel/cli": "^7.0.0-beta.47",
-    "@babel/core": "^7.0.0-beta.47",
-    "@babel/preset-env": "^7.0.0-beta.47",
-    "@types/next": "^2.4.8",
-    "@types/node": "^10.1.2",
+    "@babel/cli": "^7.14.3",
+    "@babel/core": "^7.14.3",
+    "@babel/preset-env": "^7.14.2",
+    "@types/babel-core": "^6.25.6",
+    "@types/babel__core": "^7.1.14",
+    "@types/babel__preset-env": "^7.9.1",
+    "@types/concurrently": "^6.0.1",
+    "@types/node": "^15.6.0",
+    "@types/prop-types": "^15.7.3",
+    "@types/react": "^17.0.6",
+    "@types/react-dom": "^17.0.5",
+    "@types/react-test-renderer": "^17.0.1",
+    "@types/url-parse": "^1.4.3",
     "babel-core": "^7.0.0-bridge.0",
-    "babel-eslint": "^8.2.1",
-    "babel-jest": "^22.4.3",
-    "concurrently": "^3.5.0",
-    "coveralls": "^3.0.0",
-    "del-cli": "^1.1.0",
-    "jest": "^22.4.3",
-    "next": "^6.0.0",
-    "prop-types": "^15.6.0",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0",
-    "react-test-renderer": "^16.0.0",
-    "standard": "^11.0.1",
-    "typescript": "^2.7.2"
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^26.6.3",
+    "concurrently": "^6.1.0",
+    "coveralls": "^3.1.0",
+    "del-cli": "^3.0.1",
+    "jest": "^26.6.3",
+    "next": "^10.2.2",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-test-renderer": "^17.0.2",
+    "standard": "^16.0.3",
+    "typescript": "^4.2.4"
   },
-  "author": "fridays",
+  "author": "meabed",
   "license": "MIT",
   "keywords": [
     "next",

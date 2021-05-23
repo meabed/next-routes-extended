@@ -1,6 +1,6 @@
 # Dynamic Routes for Next.js
 
-[![npm version](https://d25lcipzij17d.cloudfront.net/badge.svg?id=js&type=6&v=1.4.2&x2=0)](https://www.npmjs.com/package/next-routes) [![Coverage Status](https://coveralls.io/repos/github/fridays/next-routes/badge.svg)](https://coveralls.io/github/fridays/next-routes) [![Build Status](https://travis-ci.org/fridays/next-routes.svg?branch=master)](https://travis-ci.org/fridays/next-routes)
+[![npm version](https://d25lcipzij17d.cloudfront.net/badge.svg?id=js&type=6&v=1.4.2&x2=0)](https://www.npmjs.com/package/next-routes-extended) [![Coverage Status](https://coveralls.io/repos/github/meabed/next-routes-extended/badge.svg)](https://coveralls.io/github/meabed/next-routes-extended) [![Build Status](https://travis-ci.org/meabed/next-routes-extended.svg?branch=master)](https://travis-ci.org/meabed/next-routes-extended)
 
 Easy to use universal dynamic routes for [Next.js](https://github.com/zeit/next.js)
 
@@ -13,13 +13,13 @@ Easy to use universal dynamic routes for [Next.js](https://github.com/zeit/next.
 Install:
 
 ```bash
-npm install next-routes --save
+npm install next-routes-extended --save
 ```
 
 Create `routes.js` inside your project:
 
 ```javascript
-const routes = require('next-routes')
+const routes = require('next-routes-extended')
 
                                                     // Name   Page      Pattern
 module.exports = routes()                           // ----   ----      -----
@@ -179,7 +179,7 @@ It generates the URLs and calls `next/router`
 Optionally you can provide custom `Link` and `Router` objects, for example:
 
 ```javascript
-const routes = module.exports = require('next-routes')({
+const routes = module.exports = require('next-routes-extended')({
   Link: require('./my/link')
   Router: require('./my/router')
 })
