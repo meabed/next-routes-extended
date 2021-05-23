@@ -88,7 +88,7 @@ class Routes {
   }
 
   getLink (Link) {
-    const LinkRoutes = props => {
+    return props => {
       const { route, params, to, ...newProps } = props
       const nameOrUrl = route || to
 
@@ -98,7 +98,6 @@ class Routes {
 
       return <Link {...newProps} />
     }
-    return LinkRoutes
   }
 
   getRouter (Router) {
