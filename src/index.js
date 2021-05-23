@@ -144,11 +144,7 @@ class Route {
   }
 
   getHref (params = {}) {
-    const qp = toQuerystring(params)
-    if (qp) {
-      return `${this.page}?${toQuerystring(params)}`
-    }
-    return this.page
+    return `${this.page}?${toQuerystring(params)}`.replace(/\?$/, '')
   }
 
   getAs (params = {}) {
@@ -156,16 +152,13 @@ class Route {
     const keys = Object.keys(params)
     const qsKeys = keys.filter(key => this.keyNames.indexOf(key) === -1)
 
-    if (!qsKeys.length) return as
+    if (!qsKeys.length) return as.replace(/\?$/, '')
 
     const qsParams = qsKeys.reduce((qs, key) => Object.assign(qs, {
       [key]: params[key]
     }), {})
-    const qp = toQuerystring(params)
-    if (qp) {
-      return `${as}?${toQuerystring(qsParams)}`
-    }
-    return as
+
+    return `${as}?${toQuerystring(qsParams)}`.replace(/\?$/, '')
   }
 
   getUrls (params) {
