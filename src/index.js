@@ -144,7 +144,11 @@ class Route {
   }
 
   getHref (params = {}) {
-    return `${this.page}?${toQuerystring(params)}`
+    const qp = toQuerystring(params)
+    if (qp) {
+      return `${this.page}?${toQuerystring(params)}`
+    }
+    return this.page
   }
 
   getAs (params = {}) {
@@ -157,8 +161,11 @@ class Route {
     const qsParams = qsKeys.reduce((qs, key) => Object.assign(qs, {
       [key]: params[key]
     }), {})
-
-    return `${as}?${toQuerystring(qsParams)}`
+    const qp = toQuerystring(params)
+    if (qp) {
+      return `${as}?${toQuerystring(qsParams)}`
+    }
+    return as
   }
 
   getUrls (params) {

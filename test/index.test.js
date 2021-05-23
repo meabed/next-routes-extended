@@ -78,7 +78,7 @@ describe('Routes', () => {
     const params = { b: 'b', c: [1, 2], d: 'd' }
     const expected = { as: '/a/b/1/2?d=d', href: '/a?b=b&c=1%2F2&d=d' }
     expect(route.getUrls(params)).toEqual(expected)
-    expect(setup('a').route.getUrls()).toEqual({ as: '/a', href: '/a?' })
+    expect(setup('a').route.getUrls()).toEqual({ as: '/a', href: '/a' })
   })
 
   test('generate urls with params that need escaping', () => {
@@ -86,7 +86,7 @@ describe('Routes', () => {
     const params = { b: 'b b' }
     const expected = { as: '/a/b%20b', href: '/a?b=b%20b' }
     expect(route.getUrls(params)).toEqual(expected)
-    expect(setup('a').route.getUrls()).toEqual({ as: '/a', href: '/a?' })
+    expect(setup('a').route.getUrls()).toEqual({ as: '/a', href: '/a' })
   })
 
   test('do not pass "null" for params that have null values', () => {
@@ -94,7 +94,7 @@ describe('Routes', () => {
     const params = { b: 'b', c: null, d: undefined }
     const expected = { as: '/a/b?', href: '/a?b=b' }
     expect(route.getUrls(params)).toEqual(expected)
-    expect(setup('a').route.getUrls()).toEqual({ as: '/a', href: '/a?' })
+    expect(setup('a').route.getUrls()).toEqual({ as: '/a', href: '/a' })
   })
 
   test('ensure "as" when path match is empty', () => {
