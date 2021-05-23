@@ -1,6 +1,6 @@
 {
   "name": "next-routes-extended",
-  "version": "1.4.3",
+  "version": "1.5.0",
   "description": "Easy to use universal dynamic routes for Next.js",
   "repository": "meabed/next-routes-extended",
   "main": "dist",
