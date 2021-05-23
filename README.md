@@ -1,6 +1,6 @@
 # Dynamic Routes for Next.js
 
-[![npm version](https://d25lcipzij17d.cloudfront.net/badge.svg?id=js&type=6&v=1.4.2&x2=0)](https://www.npmjs.com/package/next-routes-extended) [![Coverage Status](https://coveralls.io/repos/github/meabed/next-routes-extended/badge.svg)](https://coveralls.io/github/meabed/next-routes-extended) [![Build Status](https://travis-ci.org/meabed/next-routes-extended.svg?branch=master)](https://travis-ci.org/meabed/next-routes-extended)
+[![npm version](https://d25lcipzij17d.cloudfront.net/badge.svg?id=js&type=6&v=1.4.3&x2=0)](https://www.npmjs.com/package/next-routes-extended) [![Coverage Status](https://coveralls.io/repos/github/meabed/next-routes-extended/badge.svg)](https://coveralls.io/github/meabed/next-routes-extended) [![Build Status](https://travis-ci.com/meabed/next-routes-extended.svg?branch=master)](https://travis-ci.org/meabed/next-routes-extended)
 
 Easy to use universal dynamic routes for [Next.js](https://github.com/zeit/next.js)
 
