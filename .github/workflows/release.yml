@@ -5,6 +5,8 @@ on:
       - 'src/**'
       - 'test/**'
       - 'typings/**'
+      - 'package.json'
+      - 'yarn.lock'
     branches:
       - 'master'
 
