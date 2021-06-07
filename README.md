@@ -11,6 +11,9 @@ Easy to use universal dynamic routes for [Next.js](https://github.com/zeit/next.
 - Request handler middleware for express & co
 - `Link` and `Router` that generate URLs by route definition
 
+## Examples 
+[CodeSandbox Example](https://codesandbox.io/s/nextjs-next-routes-7g4yu?file=/pages/index.tsx)
+
 ## How to use
 
 Install:
