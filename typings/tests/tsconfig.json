@@ -11,6 +11,7 @@
     "noFallthroughCasesInSwitch": true,
     "moduleResolution": "node",
     "skipDefaultLibCheck": true,
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true
   }
 }
