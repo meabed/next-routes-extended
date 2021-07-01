@@ -2,7 +2,13 @@
 
 [![npm version](https://d25lcipzij17d.cloudfront.net/badge.svg?id=js&type=6&v=1.5.2&x2=0)](https://www.npmjs.com/package/next-routes-extended) [![Coverage Status](https://coveralls.io/repos/github/meabed/next-routes-extended/badge.svg)](https://coveralls.io/github/meabed/next-routes-extended) [![Build Status](https://travis-ci.org/meabed/next-routes-extended.svg?branch=master)](https://travis-ci.org/meabed/next-routes-extended)
 
-#### This is forked from  and updated to the latest packages ( next.js and path-to-regexp ) and aimed to be actively maintained.
+#### This is forked from version of the original repo with some enhancements
+
+- Updates to the latest packages ( next.js and path-to-regexp ) 
+- Better typescript support
+- More examples and live codesandbox
+- Actively maintained
+
 #### PRs are welcome!
 
 Easy to use universal dynamic routes for [Next.js](https://github.com/zeit/next.js)
