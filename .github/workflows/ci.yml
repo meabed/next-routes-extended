@@ -25,7 +25,7 @@ jobs:
           workflow_id: ci.yml
           access_token: ${{ github.token }}
 
-      - uses: actions/checkout@v2.3.4
+      - uses: actions/checkout@v2.3.5
         with:
           fetch-depth: 30
           persist-credentials: false
